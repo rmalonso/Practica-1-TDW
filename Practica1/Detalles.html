@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Anales de la Ciencia</title>
+</head>
+
+<body class="bg-dark" onload="onloadDetalles()">
+  <div class="container-fluid sticky-top px-5 bg-dark p-2">
+    <div class="row justify-content-between border">
+      <div class="col-6">
+        <a class="text-light text-center p-3 mt-2" href="Writer.html"><h1>Anales de la Ciencia</h1></a>
+      </div>
+      <div class="col-6 d-flex mx-0 my-4 justify-content-lg-end">
+        <p class="text-light m-3 ps-2 pe-4" id="hola"></p>
+        <button type="button" class="btn btn-danger" onclick="location.href='Reader.html'">Log out</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex">
+    <div class="card container m-5 p-3">
+      <div class="row g-0">
+        <div class="col-md-12 col-lg-4 col-xl-4 d-flex" id="imagen">
+
+        </div>
+        <div class="col-lg-8 col-xl-8">
+
+          <div class="card-body px-5 pb-4" id="Detalles">
+            <h3 class="card-title pb-3" id="Nombre"></h3>
+            <div class="row pb-2">
+              <p class="card-text col-12 col-sm-5 col-md-4 fw-bold p-font">Fecha de nacimiento:</p>
+              <p class="card-text col-12 col-sm-7 col-md-8 p-font" id="FechaNacimiento"></p>
+            </div>
+            <div class="row pb-2">
+              <p class="card-text col-12 col-sm-5 col-md-4 fw-bold p-font">Fecha de defunción:</p>
+              <p class="card-text col-12 col-sm-7 col-md-8 p-font" id="FechaDefuncion"></p>
+            </div>
+            <div class="row pb-2" id="wiki">
+              <p class="card-text col-12 col-sm-5 col-md-4 fw-bold p-font">Wiki:</p>
+            </div>
+            <div class="row pb-2">
+              <div class="card-text col-12 col-sm-5 col-md-4  fw-bold p-font" id="tituloPersonasInvolucradas">
+
+              </div>
+              <div class="card-text col-12 col-sm-7 col-md-8 d-flex" id="personasInvolucradas">
+
+              </div>
+            
+            </div>
+            <div class="row pb-2">
+              <div class="card-text col-12 col-sm-5 col-md-4  fw-bold p-font" id="tituloEntidadesInvolucradas">
+
+              </div>
+              <div class="card-text col-12 col-sm-7 col-md-8 d-flex" id="entidadesInvolucradas">
+
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+  integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="../Practica1/JS/Entidad.js"></script>
+  <script src="../Practica1/JS/Persona.js"></script>
+  <script src="../Practica1/JS/Producto.js"></script>
+  <script src="../Practica1/JS/Usuario.js"></script>
+  <script src="../Practica1/JS/Utiles.js"></script>
+  <script src="../Practica1/JS/DatosIniciales.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
